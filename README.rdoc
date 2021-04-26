@@ -102,3 +102,8 @@ This task requires to {install Pandoc}[http://johnmacfarlane.net/pandoc/installi
 2. Execute generator
 
     rails generate redmine_ckeditor:rich_assets
+
+== Redmine Upgrade
+Copy the files directory content into your new installation (this directory contains all your uploaded files fom CKEditor).
+
+    cp -r redmine/public/system/rich new_redmine_folder/public/system/rich
